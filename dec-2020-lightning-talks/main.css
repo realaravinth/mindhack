@@ -16,23 +16,18 @@ li {
   list-style: none;
 }
 
+/* Sub headings that are in green and basically everything that looks like
+ * its out of a 90s video game */
 .green-text {
   color: #0cfc05;
+  font-family: 'VT323', monospace;
 }
 
 .inline-text {
   display: inline;
 }
 
-body {
-  background-color: black;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.monospace {
-  font-family: 'VT323', monospace;
-}
-
+/* makes divs nad links look like green buttons */
 .btn {
   background-color: #70f730;
   font-family: sans-serif;
@@ -44,6 +39,15 @@ body {
   vertical-align: middle;
   font-size: 1rem;
   font-weight: bolder;
+}
+
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.monospace {
+  font-family: 'VT323', monospace;
 }
 
 .notice {
@@ -108,6 +112,8 @@ body {
   grid-row: 4;
   background-color: #70f730;
 }
+
+/* the stuff looks like a dog ear */
 .dog-ear-five {
   grid-column: 13/ 4;
   grid-row: 4;
