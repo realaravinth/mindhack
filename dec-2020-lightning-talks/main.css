@@ -4,10 +4,6 @@
   margin: 0px;
 }
 
-body {
-  background-color: black;
-}
-
 /* utils */
 .container {
   max-width: 80%;
@@ -15,23 +11,49 @@ body {
   margin-top: 3vh;
 }
 
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.green-text {
+  color: #0cfc05;
+}
+
+.inline-text {
+  display: inline;
+}
+
+body {
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.monospace {
+  font-family: 'VT323', monospace;
+}
+
 .btn {
   background-color: #70f730;
+  font-family: sans-serif;
   width: 9vh;
   height: 1vh;
   padding: 0.9rem;
   text-align: center;
+  text-justify: auto;
   vertical-align: middle;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 .notice {
   display: grid;
-  max-width: 95%;
+  max-width: 75%;
   margin: 20px auto;
-  grid-template-columns: repeat(100, calc(95% / 100));
-  grid-template-rows: repeat(1000, calc(50vh / 1000));
-  box-shadow: 0 0 10px #022901, -10px 0 10px #022901, 10px 0 10px #022901;
+  height: 70vh;
+  grid-template-columns: repeat(100, calc(75% / 100));
+  grid-template-rows: repeat(1000, calc(70vh / 1000));
+  box-shadow: 0 0 40px #022901, -10px 0 40px #022901, 10px 0 40px #022901;
 }
 
 .action-first {
@@ -45,38 +67,44 @@ body {
   grid-row: 240;
 
   display: grid;
-  grid-template-columns: repeat(4, 5vh);
-  grid-template-rows: repeat(4, 5vh);
-  width: 20vh;
-  height: 20vh;
+  grid-template-columns: repeat(4, 7vh);
+  grid-template-rows: repeat(4, 7vh);
+  width: 28vh;
+  height: 28vh;
   z-index: 3;
 }
 
 .dog-ear-one {
   grid-column: 1 /5;
   grid-row: 1;
+}
+
+.dog-ear-two,
+.dog-ear-three,
+.dog-ear-one {
   background-color: #70f730;
 }
 
 .dog-ear-two {
   grid-column: 1 /5;
   grid-row: 2;
-  background-color: #70f730;
+}
+
+.dog-ear-two,
+.dog-ear-three {
   text-align: center;
-  font-weight: bolder;
+  font-weight: 1000;
+  font-size: 2.4rem;
+  font-weight: 900;
 }
 
 .dog-ear-three {
   grid-column: 1 /5;
   grid-row: 3;
-  background-color: #70f730;
-  text-align: center;
-  font-weight: bolder;
 }
 
 .dog-ear-four {
   grid-column: 1 / 4;
-  content: '';
   grid-row: 4;
   background-color: #70f730;
 }
@@ -84,8 +112,8 @@ body {
   grid-column: 13/ 4;
   grid-row: 4;
   background-color: black;
-  width: 5vh;
-  height: 5vh;
+  width: 7vh;
+  height: 7vh;
   overflow: hidden;
   position: relative;
 }
@@ -97,4 +125,19 @@ body {
   height: 144%;
   position: absolute;
   transform: rotate(45deg) translate(-71%, 0%);
+}
+
+#nav {
+  grid-column: 20;
+  grid-row: 900;
+
+  display: flex;
+  width: 55vw;
+  flex-direction: row;
+  font-size: 1.3rem;
+}
+
+#nav li {
+  flex: auto;
+  font-size: 1.2rem;
 }
