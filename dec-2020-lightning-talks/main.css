@@ -1,0 +1,58 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  grid-template-rows: repeat(4, 40px);
+  background-color: red;
+  width: 160px;
+  height: 160px;
+}
+.one {
+  grid-column: 1 /5;
+  grid-row: 1;
+  background-color: #70f630;
+}
+
+.two {
+  grid-column: 1 /5;
+  grid-row: 2;
+  background-color: #70f630;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.three {
+  grid-column: 1 /5;
+  grid-row: 3;
+  background-color: #70f630;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.four {
+  grid-column: 1 / 4;
+  content: ""; 
+  grid-row: 4;
+  background-color: #70f630;
+}
+.five {
+  grid-column: 13/ 4;
+  grid-row: 4;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+}
+
+.five:after {
+    content: '';
+    background: #44d300;
+    width: 144%;
+    height: 144%;
+    position: absolute;
+    transform: rotate(45deg) translate(-71%,0%);
+}
