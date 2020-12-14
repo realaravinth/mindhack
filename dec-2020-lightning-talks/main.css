@@ -1,58 +1,100 @@
+/* reset */
 * {
   padding: 0px;
   margin: 0px;
 }
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 40px);
-  grid-template-rows: repeat(4, 40px);
-  background-color: red;
-  width: 160px;
-  height: 160px;
+
+body {
+  background-color: black;
 }
-.one {
+
+/* utils */
+.container {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 3vh;
+}
+
+.btn {
+  background-color: #70f730;
+  width: 9vh;
+  height: 1vh;
+  padding: 0.9rem;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0.7rem;
+}
+
+.notice {
+  display: grid;
+  max-width: 95%;
+  margin: 20px auto;
+  grid-template-columns: repeat(100, calc(95% / 100));
+  grid-template-rows: repeat(1000, calc(50vh / 1000));
+  box-shadow: 0 0 10px #022901, -10px 0 10px #022901, 10px 0 10px #022901;
+}
+
+.action-first {
+  grid-column: 5;
+  grid-row: 50;
+}
+
+/* dog ear note */
+.dog-ear-wrapper {
+  grid-column: 20;
+  grid-row: 240;
+
+  display: grid;
+  grid-template-columns: repeat(4, 5vh);
+  grid-template-rows: repeat(4, 5vh);
+  width: 20vh;
+  height: 20vh;
+  z-index: 3;
+}
+
+.dog-ear-one {
   grid-column: 1 /5;
   grid-row: 1;
-  background-color: #70f630;
+  background-color: #70f730;
 }
 
-.two {
+.dog-ear-two {
   grid-column: 1 /5;
   grid-row: 2;
-  background-color: #70f630;
+  background-color: #70f730;
   text-align: center;
   font-weight: bolder;
 }
 
-.three {
+.dog-ear-three {
   grid-column: 1 /5;
   grid-row: 3;
-  background-color: #70f630;
+  background-color: #70f730;
   text-align: center;
   font-weight: bolder;
 }
 
-.four {
+.dog-ear-four {
   grid-column: 1 / 4;
-  content: ""; 
+  content: '';
   grid-row: 4;
-  background-color: #70f630;
+  background-color: #70f730;
 }
-.five {
+.dog-ear-five {
   grid-column: 13/ 4;
   grid-row: 4;
   background-color: black;
-  width: 40px;
-  height: 40px;
+  width: 5vh;
+  height: 5vh;
   overflow: hidden;
   position: relative;
 }
 
-.five:after {
-    content: '';
-    background: #44d300;
-    width: 144%;
-    height: 144%;
-    position: absolute;
-    transform: rotate(45deg) translate(-71%,0%);
+.dog-ear-five:after {
+  content: '';
+  background: #44d300;
+  width: 144%;
+  height: 144%;
+  position: absolute;
+  transform: rotate(45deg) translate(-71%, 0%);
 }
