@@ -1,6 +1,6 @@
 const drawGrid = () => {
   let divContainer = document.getElementById('grid');
-  let columns = 50;
+  let columns = 26;
   let rows = 13;
 
   for (let i = 1; i <= columns; i++) {
