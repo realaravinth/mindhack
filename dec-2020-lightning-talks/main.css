@@ -4,6 +4,13 @@
   margin: 0px;
 }
 
+:root {
+  --neon-green: #70f730;
+  --neon-green-darker: #44d300;
+  --subheadings: #0cfc05;
+  --background: black;
+}
+
 /* utils */
 .container {
   max-width: 80%;
@@ -19,7 +26,7 @@ li {
 /* Sub headings that are in green and basically everything that looks like
  * its out of a 90s video game */
 .green-text {
-  color: #0cfc05;
+  color: var(--subheadings);
   font-family: 'VT323', monospace;
 }
 
@@ -29,7 +36,7 @@ li {
 
 /* makes divs nad links look like green buttons */
 .btn {
-  background-color: #70f730;
+  background-color: var(--neon-green);
   font-family: sans-serif;
   width: 9vh;
   height: 1vh;
@@ -42,7 +49,7 @@ li {
 }
 
 body {
-  background-color: black;
+  background-color: var(--background);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -85,8 +92,9 @@ body {
 
 .dog-ear-two,
 .dog-ear-three,
+.dog-ear-four,
 .dog-ear-one {
-  background-color: #70f730;
+  background-color: var(--neon-green);
 }
 
 .dog-ear-two {
@@ -110,14 +118,13 @@ body {
 .dog-ear-four {
   grid-column: 1 / 4;
   grid-row: 4;
-  background-color: #70f730;
 }
 
 /* the stuff looks like a dog ear */
 .dog-ear-five {
   grid-column: 13/ 4;
   grid-row: 4;
-  background-color: black;
+  background-color: var(--background);
   width: 7vh;
   height: 7vh;
   overflow: hidden;
@@ -126,7 +133,7 @@ body {
 
 .dog-ear-five:after {
   content: '';
-  background: #44d300;
+  background: var(--neon-green-darker);
   width: 144%;
   height: 144%;
   position: absolute;
