@@ -9,6 +9,8 @@
   --neon-green-darker: #44d300;
   --subheadings: #0cfc05;
   --background: black;
+  --secondary-color-bright: #fff;
+  --secondary-color-dull: #f8f8f8;
 }
 
 /* utils */
@@ -25,23 +27,35 @@ li {
 
 /* Sub headings that are in green and basically everything that looks like
  * its out of a 90s video game */
-.green-text {
+.subheading {
   color: var(--subheadings);
   font-family: 'VT323', monospace;
+}
+
+.secondary-color-bright {
+  color: var(--secondary-color-bright);
 }
 
 .inline-text {
   display: inline;
 }
 
+.green-text {
+  color: var(--subheadings);
+}
+
+.monospace {
+  font-family: 'VT323', monospace;
+}
+
 /* makes divs nad links look like green buttons */
 .btn {
   background-color: var(--neon-green);
-  font-family: sans-serif;
   width: 9vh;
   height: 1vh;
   padding: 0.9rem;
   text-align: center;
+  font-family: sans-serif;
   text-justify: auto;
   vertical-align: middle;
   font-size: 1rem;
@@ -50,11 +64,7 @@ li {
 
 body {
   background-color: var(--background);
-  font-family: 'Montserrat', sans-serif;
-}
-
-.monospace {
-  font-family: 'VT323', monospace;
+  font-family: sans-serif;
 }
 
 .notice {
@@ -77,6 +87,7 @@ body {
   grid-column: 20;
   grid-row: 240;
 
+  font-family: 'Montserrat', sans-serif;
   display: grid;
   grid-template-columns: repeat(4, 7vh);
   grid-template-rows: repeat(4, 7vh);
@@ -153,4 +164,20 @@ body {
 #nav li {
   flex: auto;
   font-size: 1.2rem;
+}
+
+#landing {
+  grid-column: 050;
+  grid-row: 240;
+
+}
+
+
+#landing h5 {
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+#landing h1 {
+  font-size: 4.5rem;
 }
