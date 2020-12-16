@@ -395,7 +395,7 @@ body {
 }
 
 #schedule-timeline-line {
-  border: 0.00001px solid var(--timeline-line-color);
+  border: 1px solid var(--timeline-line-color);
   width: 0px;
   height: 110vh;
   z-index: -1;
