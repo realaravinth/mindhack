@@ -488,3 +488,15 @@ body {
   filter: invert(35%) sepia(66%) saturate(2107%) hue-rotate(9deg)
     brightness(89%) contrast(101%);
 }
+
+#wavy-bg {
+  background-image: url('./res/wavy-bg.png');
+  background-size: cover;
+  z-index: -5;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#tickets {
+  padding: 10px 0px;
+}
