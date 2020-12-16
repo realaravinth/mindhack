@@ -240,22 +240,29 @@ body {
   cursor: grab;
 }
 
-#nav li:before {
+#nav a:visited {
+  color: var(--neon-green-darker);
+}
+
+#nav a {
+  color: var(--neon-green-darker);
+}
+
+#nav a:before {
   background: #d35400;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
 }
 
-#nav li:hover:before {
+#nav a:hover:before {
   transform: scale(1.2);
   box-shadow: 0 0 15px #d35400;
   filter: blur(3px);
 }
 
-#nav li:hover {
+#nav a:hover {
   color: #ffa502;
-  box-shadow: 0 0 15px #d35400;
   text-shadow: 0 0 15px #d35400;
 }
 
@@ -458,6 +465,7 @@ body {
   display: inline-block;
   margin: auto;
   padding: 0 15px;
+  cursor: grab;
 }
 
 .green-icon {
