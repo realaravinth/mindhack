@@ -27,11 +27,13 @@ li {
   list-style: none;
 }
 
-/* Sub headings that are in green and basically everything that looks like
- * its out of a 90s video game */
-.subheading {
+.monospace-green {
   color: var(--subheadings);
   font-family: 'VT323', monospace;
+}
+
+section {
+  margin: 30px 0;
 }
 
 .secondary-color-bright {
@@ -73,6 +75,16 @@ li {
 .btn:hover {
   background-color: var(--neon-green-darker);
 }
+
+/* Sub headings that are in green and basically everything that looks like
+ * its out of a 90s video game */
+.subheading {
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+}
+
+
 
 body {
   background-color: var(--background);
@@ -253,9 +265,8 @@ body {
   justify-content: center;
 }
 
-#timer-container .subheading {
+#timer-container .monospace-green {
   background-color: black;
-  display: block-flex;
   font-size: 2.5rem;
   text-align: center;
   z-index: 3;
@@ -306,6 +317,13 @@ body {
   justify-content: right;
 }
 
+.schedule-text-container p {
+  font-size: 1.2rem;
+}
+
+.schedule-text-container h2 {
+  font-size: 2rem;
+}
 #day1 {
   grid-column: 0;
   grid-row: 12;
@@ -368,4 +386,36 @@ body {
 #schedule-timeline-bob-5 {
   grid-column: 48;
   grid-row: 95;
+}
+
+#speakers {
+  display: grid;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*
+  margin-top: 15vh;
+  grid-template-columns: repeat(100, calc(100% / 100));
+  grid-template-rows: repeat(100, calc(70vh / 100));
+  */
+}
+
+.speaker-container {
+  text-align: center;
+  width: 33%;
+  padding: 30px 0;
+}
+
+.speaker-container img {
+  width: 12vw;
+  height: 12vw;
+  overflow: hidden;
+  margin: auto;
+}
+.speaker-name {
+  color: var(--secondary-color-bright);
+}
+
+.speaker-about {
+  color: var(--secondary-color-dull);
 }
