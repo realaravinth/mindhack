@@ -115,6 +115,7 @@ section {
 
 html {
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -169,6 +170,7 @@ body {
   visibility: hidden;
   display: none;
   background-color: red;
+  overflow: hidden;
 }
 
 
