@@ -431,8 +431,7 @@ body {
   padding: 30px 0;
 }
 
-.speaker-container img,
-.sponsor-container img {
+.speaker-container img{
   width: 12vw;
   height: 12vw;
   overflow: hidden;
@@ -450,6 +449,13 @@ body {
   text-align: center;
   width: 50%;
   padding: 30px 0;
+}
+
+.sponsor-container img {
+  width: 15vw;
+  height: 7vw;
+  overflow: hidden;
+  margin: auto;
 }
 
 .icons {
