@@ -23,7 +23,13 @@
   margin-top: 3vh;
 }
 
-li {
+.container-small {
+  max-width: calc(65 * var(--container-width) / 100);
+  margin: auto;
+  margin-top: 3vh;
+}
+
+ul li {
   text-decoration: none;
   list-style: none;
 }
@@ -34,7 +40,7 @@ li {
 }
 
 section {
-  margin: 10vh 0;
+  margin: 15vh 0;
 }
 
 .secondary-color-bright {
@@ -61,27 +67,44 @@ section {
 /* makes divs nad links look like green buttons */
 .btn {
   background-color: var(--neon-green);
-  width: 9vh;
-  height: 1rem;
   padding: 0.9rem;
+  display: block;
+  max-width: 10vw;
   text-align: center;
   font-family: sans-serif;
   text-justify: auto;
-  vertical-align: middle;
   font-size: 1rem;
   font-weight: bolder;
   cursor: grab;
+  margin: auto;
 }
 
 .btn:hover {
   background-color: var(--neon-green-darker);
 }
 
+.center-btn{
+  margin: auto;
+}
+
+.margin-btn{
+  margin-top: 10vh;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.sub-text {
+  font-size: 1.5rem;
+}
+
 /* Sub headings that are in green and basically everything that looks like
  * its out of a 90s video game */
 .subheading {
   font-size: 3rem;
-  margin: auto;
+  margin:auto;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -101,9 +124,11 @@ body {
 }
 
 .action-first {
-  grid-column: 5;
-  grid-row: 50;
+  position: absolute;
+  top: 7.5vh;
+  left: 10%;
 }
+
 
 .landing-flex {
   grid-column: 20;
@@ -411,7 +436,6 @@ body {
 */
 
 #speakers {
-  display: grid;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -428,7 +452,8 @@ body {
   padding: 30px 0;
 }
 
-.speaker-container img {
+.speaker-container img,
+.sponsor-container img{
   width: 12vw;
   height: 12vw;
   overflow: hidden;
@@ -440,4 +465,10 @@ body {
 
 .speaker-about {
   color: var(--secondary-color-dull);
+}
+
+.sponsor-container {
+  text-align: center;
+  width: 50%;
+  padding: 30px 0;
 }
