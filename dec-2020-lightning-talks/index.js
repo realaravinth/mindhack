@@ -1,4 +1,4 @@
-const D_DAY = 1610908200;
+const D_DAY = 1608372900;
 
 const drawGrid = () => {
   let divContainer = document.getElementById('grid');
