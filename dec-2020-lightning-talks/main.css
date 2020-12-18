@@ -37,6 +37,7 @@ ul li {
 a {
   text-decoration: none;
   color: none;
+  color: black;
 }
 
 .monospace-green {
@@ -433,6 +434,8 @@ body {
 }
 .speaker-name {
   color: var(--secondary-color-bright);
+  margin: 5px 0;
+  font-size: 1.3rem;
 }
 
 .speaker-about {
