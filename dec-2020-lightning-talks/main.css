@@ -357,11 +357,11 @@ body {
 }
 
 .schedule-text-container p {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
 }
 
 .schedule-text-container h2 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 #day1 {
   grid-column: 15;
