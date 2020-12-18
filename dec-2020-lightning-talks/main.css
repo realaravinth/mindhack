@@ -345,7 +345,7 @@ body {
 #schedule {
   display: grid;
   width: 100%;
-  height: 110vh;
+  height: 80vh;
 
   grid-template-columns: repeat(100, calc(100% / 100));
   grid-template-rows: repeat(110, calc(110vh / 110));
@@ -364,26 +364,26 @@ body {
   font-size: 2rem;
 }
 #day1 {
-  grid-column: 0;
-  grid-row: 12;
+  grid-column: 15;
+  grid-row: 5;
 }
 #day2 {
   grid-column: 70;
-  grid-row: 30;
+  grid-row: 15;
 }
 #day3 {
-  grid-column: 0;
-  grid-row: 55;
+  grid-column: 15;
+  grid-row: 35;
 }
 
 #day4 {
   grid-column: 70;
-  grid-row: 75;
+  grid-row: 55;
 }
 
 #day5 {
-  grid-column: 0;
-  grid-row: 95;
+  grid-column: 15;
+  grid-row: 65;
 }
 
 #schedule-timeline-line-flex,
@@ -398,7 +398,7 @@ body {
 #schedule-timeline-line {
   border: 1px solid var(--timeline-line-color);
   width: 0px;
-  height: 110vh;
+  height: 80vh;
   z-index: -1;
   margin: 0 40vw;
 }
@@ -412,7 +412,7 @@ body {
   border: 4px solid #2c282d;
   box-sizing: border-box;
   display: inline-block;
-  margin: 8vh 37.8vw;
+  margin: 4.5vh 37.8vw;
 }
 .speakers {
   width: 100%;
